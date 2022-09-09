@@ -1,13 +1,9 @@
 # hoverboard_robot
-Making a robot with hoverboard to use it with ROS2
+Thi projects intention is to make a public repository where anyone can create a robot with an embedded system and hoverboard wheels Using ROS2.
 
-\### Project status
+## Project status
 
-- [x] Design
-- [x] Mockups
-- [x] Development
-- [x] Unit testing
-- [ ] QA
-- [ ] Stage
-- [ ] Beta Testing
-- [ ] Production
+- [ ] Docker ready to use it in the embedded system
+- [ ] Hoverboard firmware hack
+- [ ] Hoverboard control with embedded system using ROS2
+- [ ] Add own AI system for semantic segmentation into ROS2
