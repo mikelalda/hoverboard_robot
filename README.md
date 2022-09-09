@@ -2,8 +2,7 @@
 Thi projects intention is to make a public repository where anyone can create a robot with an embedded system and hoverboard wheels Using ROS2.
 
 # Index
-- [About hoverboard_robot](#about-hoverboard_robot)
-- [Index](#index)
+
   - [Project status](#project-status)
   - [Docker](#docker)
   - [Hoverboard firmware hack](#hoverboard-firmware-hack)
@@ -26,7 +25,9 @@ Thi projects intention is to make a public repository where anyone can create a 
 
 ## Docker
 
-First of all we need to prepare our docker image to use it in any device.
+First of all we need to prepare our docker image to use it in any device. 
+
+
 
 ## Hoverboard firmware hack
 
