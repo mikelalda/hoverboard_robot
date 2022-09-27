@@ -72,8 +72,6 @@ Dockerfile commands
 11. VOLUME
 12. WORKDIR
 
-Check [Dockerfile](https://github.com/mikelalda/hoverboard_robot/blob/main/Dockerfile) to undertand the image generation
-
 ## Hoverboard firmware hack
 
 The firmware hack is done in VS Code by Platfor IO using the code of [EFeru/hoverboard-firmware-hack-FOC]([linkurl](https://github.com/EFeru/hoverboard-firmware-hack-FOC)) repository. Main steps to upload the firmware:
