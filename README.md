@@ -72,7 +72,7 @@ Dockerfile commands
 11. VOLUME
 12. WORKDIR
 
-check Dockerfile to 
+Check [Dockerfile](https://github.com/mikelalda/hoverboard_robot/blob/main/Dockerfile) to undertand the image generation
 
 ## Hoverboard firmware hack
 
