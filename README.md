@@ -36,13 +36,13 @@ First of all we need to prepare our docker image to use it in any device.
      git clone https://github.com/mikelalda/hoverboard_robot.git - melodic
      cd hoverboard_robot
      docker build . -t hoverboard_robot:melodic
-     docker run --name melodic-robot -it -rm --net=host hoverboard_robot:melodic
+     docker run --name melodic-robot -it --rm --net=host hoverboard_robot:melodic
 
      ```
    * The fist time will take a while, but after you have done this the first time just running this command is enough and won't take mutch time.
 
      ```shell
-     docker run --name melodic-robot -it --net=host hoverboard_robot:melodic
+     docker run --name melodic-robot -it --rm --net=host hoverboard_robot:melodic
      ```
 
 ## Hoverboard firmware hack
