@@ -59,25 +59,44 @@ Commands:
 
 Dockerfile commands
 
-1. ADD
-2. COPY
-3. CMD
-4. ENTRYPOINT
-5. ENV
-6. FROM
-7. MANTAINER
-8. ONBUILD
-9. RUN
-10. USER
-11. VOLUME
-12. WORKDIR
+1. ADD : copia los archivos de construccion o url remota y se doscomprime automaticamente
+2. COPY : se utiliza para copiar archivos o directorios
+3. CMD : para ejecutar un script, es decir, linea a ejecutar
+4. ENTRYPOINT : nos permite introducir un fichero con argumentos de entrada, un .bash
+5. ENV : establece variables de entorno de la imagen
+6. FROM : establece la imagen base para dockerfile
+7. MANTAINER : establece los metadatos de autor (se puede analizar con inspect)
+8. ONBUILD : especifica la instruccion que se ejecutara mas tarde
+9. RUN : ejecuta la instruccion dentro del contenedor y consigna el resultado
+10. USER : usuario por nombre o id
+11. VOLUME : se declara archivo o directorio
+12. WORKDIR : se define el directorio de trabajo
+
+Docker execution commands
+
+1. -a : atached adjunta el flujo a la terminal (se adjunta stdin y stdout).
+2. -d : detached ejecuta el contenedor en segundo plano.
+3. -i : interactive mantiene abierta la entrada estandar para comandos (normalmente se utiliza con -t)
+4. --restart : intentara reiniciar un contenedor
+5. -rm : premite eliminar un contenedor
+6. -t : allocate a pseudo-terminal
+7. -h : hostname para indicarle el host del contenedor
+8. -n : asignar nombre del contenedor
+9. -v : establecer volumen en contenedor
+10. --volumes-from : para compartir volumenes entre contenedores
+11. --expose : identifica el puerto o rango de puertos pero no abre
+12. --link : entablece una interfaz de red privada
+13. -p : publica el puerto del contenedor en uno local, para acceder desde host
+14. -P : publica todos los puerto expuestos anteriormente (docker port para ver mapeo)
+15. --entrypoint : anular la configuracion del dockerfile
+16. -u : establece el usuario con el que se ejecutaran los comandos
 
 ## Hoverboard firmware hack
 
 The firmware hack is done in VS Code by Platfor IO using the code of [EFeru/hoverboard-firmware-hack-FOC]([linkurl](https://github.com/EFeru/hoverboard-firmware-hack-FOC)) repository. Main steps to upload the firmware:
 
-- Platform IO
--
+- Install Platform IO to VS Code
+- Open the [project](https://github.com/EFeru/hoverboard-firmware-hack-FOC) mentioned above
 
 ## Hoverboard control check
 
