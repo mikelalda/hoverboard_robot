@@ -1,8 +1,0 @@
-prefix=/home/mikel/hoverboard_ws/devel
-
-Name: robaka
-Description: Description of robaka
-Version: 1.0.1
-Cflags: -I/home/mikel/hoverboard_ws/src/robaka/include
-Libs: -L${prefix}/lib -lrobaka
-Requires: message_generation std_msgs geometry_msgs sensor_msgs
