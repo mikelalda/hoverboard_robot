@@ -1,0 +1,3 @@
+[submodule "hoverboard_ws/src/robaka-ros"]
+	path = hoverboard_ws/src/robaka-ros
+	url = https://github.com/alex-makarov/robaka-ros.git
