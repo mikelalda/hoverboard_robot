@@ -34,7 +34,7 @@ First of all we need to prepare our docker image to use it in any device.
 
      ```shell
      git clone https://github.com/mikelalda/hoverboard_robot.git - melodic
-     cd 
+     cd hoverboard_robot
      docker build . -t hoverboard_robot:melodic
      docker run --name melodic-robot -it -rm --net=host hoverboard_robot:melodic
 
