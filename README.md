@@ -1,6 +1,6 @@
 # About hoverboard_robot
 
-Thi projects intention is to make a public repository where anyone can create a robot with an embedded system and hoverboard wheels Using ROS2.
+Thi projects intention is to make a public repository where anyone can create a robot with an embedded system and hoverboard wheels Using ROS.
 
 # Index
 
@@ -11,73 +11,46 @@ Thi projects intention is to make a public repository where anyone can create a 
 - [Robot design](#robot-design)
 - [Robot simulation](#robot-simulation)
 - [Robot creation](#robot-creation)
-- [AI model into ROS2](#ai-model-into-ros2)
+- [AI model into ROS](#ai-model-into-ros)
 
 ## Project status
 
-- [ ] Docker ready to use it in the embedded system
+- [X] Docker ready to use it in the embedded system
 - [ ] Hoverboard firmware hack
-- [ ] Hoverboard control with embedded system using ROS2
+- [ ] Hoverboard control with embedded system using ROS
 - [ ] Robot design
 - [ ] Robot simulation
 - [ ] Create the robot
-- [ ] Add own AI system for semantic segmentation into ROS2
+- [ ] Add own AI system for semantic segmentation into ROS
 
 ## Docker
 
 First of all we need to prepare our docker image to use it in any device.
 
-Dockr tips:
 
-Commands:
+1. Creamos el contenedor
 
-1. Listar todas las imágenes
-   * `docker images`
-2. Listar todos los contenedores ejecutando
-   * `docker ps`
-3. Listar todos los contenedores
-   * `docker ps -a`
-4. Borrar un contenedor
-   * `docker rm CONTENEDOR_ID`
-5. Borrar una imagen
-   * `docker rmi IMAGEN_ID`
-6. Descargar la imagen de ROS2
-   * `docker pull docker_name:tag`
-   * check docker images in dockerhub
-7. Creamos el contenedor
-   * Run this command in shell
+   * Run this commands in shell and you can run ros melodic on you computer with.
+
+     ```shell
+     git clone https://github.com/mikelalda/hoverboard_robot.git - melodic
+     cd hoverboard_robot
+     docker build . -t hoverboard_robot:melodic
+     docker run --name melodic-robot -it -rm --net=host hoverboard_robot:melodic
 
      ```
-     docker run --name ros2 -it \
-     -eDISPLAY=$DISPLAY \
-     --device=/dev/dri:/dev/dri \
-     -v$HOME/curso_ros/:/tmp/curso_ros/:rw \
-     -v/tmp/.X11-unix:/tmp/.X11-unix \
-     --env="QT_X11_NO_MITSHM=1" \
-     $IMAGE_ID /bin/bash
+   * The fist time will take a while, but after you have done this the first time just running this command is enough and won't take mutch time.
+
+     ```shell
+     docker run --name melodic-robot -it --net=host hoverboard_robot:melodic
      ```
-
-Dockerfile commands
-
-1. ADD
-2. COPY
-3. CMD
-4. ENTRYPOINT
-5. ENV
-6. FROM
-7. MANTAINER
-8. ONBUILD
-9. RUN
-10. USER
-11. VOLUME
-12. WORKDIR
 
 ## Hoverboard firmware hack
 
 The firmware hack is done in VS Code by Platfor IO using the code of [EFeru/hoverboard-firmware-hack-FOC]([linkurl](https://github.com/EFeru/hoverboard-firmware-hack-FOC)) repository. Main steps to upload the firmware:
 
-- Platform IO
--
+- Install Platform IO to VS Code
+- Open the [project](https://github.com/EFeru/hoverboard-firmware-hack-FOC) mentioned above
 
 ## Hoverboard control check
 
@@ -95,10 +68,8 @@ Using the robot design and the elements to add in ROS make the URDF and add the 
 
 Create the robot
 
-## AI model into ROS2
+## AI model into ROS
 
 Train our own model for semantic segmentation using SUN-RGBD dataset and load it to use it as a ROS node.
 
 ## Check new things
-
-How to use Nav2 and PlanSys2
