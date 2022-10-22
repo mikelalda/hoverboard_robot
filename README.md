@@ -48,7 +48,7 @@ Commands:
    * Run this command in shell
 
      ```
-     docker run --name ros2 -it \
+     docker run --name melodic-robot -it \
      -eDISPLAY=$DISPLAY \
      --device=/dev/dri:/dev/dri \
      -v$HOME/curso_ros/:/tmp/curso_ros/:rw \
