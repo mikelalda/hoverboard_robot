@@ -14,8 +14,10 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /root/catkin_ws/src
 RUN git clone https://github.com/ros-drivers/rosserial.git
+RUN git clone https://github.com/alex-makarov/hoverboard-driver.git
+RUN git clone https://github.com/alex-makarov/robaka-ros.git
 
-COPY ./hoverboard_ws/src /root/catkin_ws/src
+# COPY ./hoverboard_ws/src /root/catkin_ws/src
 
 WORKDIR /root/catkin_ws
 

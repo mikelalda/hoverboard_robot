@@ -1,3 +1,9 @@
 [submodule "hoverboard_ws/src/robaka-ros"]
 	path = hoverboard_ws/src/robaka-ros
 	url = https://github.com/alex-makarov/robaka-ros.git
+[submodule "hoverboard_ws/src/hoverboard-driver"]
+	path = hoverboard_ws/src/hoverboard-driver
+	url = https://github.com/alex-makarov/hoverboard-driver.git
+[submodule "hoverboard_ws/src/rosserial"]
+	path = hoverboard_ws/src/rosserial
+	url = https://github.com/ros-drivers/rosserial.git
