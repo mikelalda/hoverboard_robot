@@ -27,23 +27,22 @@ Thi projects intention is to make a public repository where anyone can create a 
 
 First of all we need to prepare our docker image to use it in any device.
 
+* Check in the Dockerfile that the usb connection is the one you will use for the hoverboard connection.
+* Run this commands in shell and you can run ros melodic on you computer with.
 
-1. Creamos el contenedor
+  ```shell
+  git clone https://github.com/mikelalda/hoverboard_robot.git - melodic
+  cd hoverboard_robot
+  docker build . -t hoverboard_robot:melodic
+  docker run --name melodic-robot -it --rm --net=host hoverboard_robot:melodic
 
-   * Run this commands in shell and you can run ros melodic on you computer with.
+  ```
+* The fist time will take a while, but after you have done this the first time just running this command is enough and won't take mutch time.
 
-     ```shell
-     git clone https://github.com/mikelalda/hoverboard_robot.git - melodic
-     cd hoverboard_robot
-     docker build . -t hoverboard_robot:melodic
-     docker run --name melodic-robot -it --rm --net=host hoverboard_robot:melodic
+  ```shell
+  docker run --name melodic-robot -it --rm --net=host hoverboard_robot:melodic
+  ```
 
-     ```
-   * The fist time will take a while, but after you have done this the first time just running this command is enough and won't take mutch time.
-
-     ```shell
-     docker run --name melodic-robot -it --rm --net=host hoverboard_robot:melodic
-     ```
 
 ## Hoverboard firmware hack
 

@@ -19,7 +19,9 @@ WORKDIR /root/catkin_ws
 
 # RUN colcon build
 WORKDIR /root/catkin_ws
-RUN /bin/bash -c '. /opt/ros/${ROS_DISTRO}/setup.bash; rosdep install --from-paths src --ignore-src; cd /root/catkin_ws; catkin_make'
+RUN /bin/bash -c 'source /opt/ros/${ROS_DISTRO}/setup.bash; rosdep install --from-paths src --ignore-src; cd /root/catkin_ws; catkin_make'
+
+RUN /bin/bash -c 'source /root/catkin_ws/devel/setup.bash'
 
 # use the one you connect to hoverboard
 VOLUME [ "/dev/bus/usb/00" ]
