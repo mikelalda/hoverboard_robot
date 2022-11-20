@@ -16,7 +16,7 @@ Thi projects intention is to make a public repository where anyone can create a 
 ## Project status
 
 - [X] Docker ready to use it in the embedded system
-- [ ] Hoverboard firmware hack
+- [X] Hoverboard firmware hack
 - [ ] Hoverboard control with embedded system using ROS
 - [ ] Robot design
 - [ ] Robot simulation
@@ -43,13 +43,14 @@ First of all we need to prepare our docker image to use it in any device.
   docker run --name melodic-robot -it --rm --net=host hoverboard_robot:melodic
   ```
 
-
 ## Hoverboard firmware hack
 
 The firmware hack is done in VS Code by Platfor IO using the code of [EFeru/hoverboard-firmware-hack-FOC]([linkurl](https://github.com/EFeru/hoverboard-firmware-hack-FOC)) repository. Main steps to upload the firmware:
 
 - Install Platform IO to VS Code
 - Open the [project](https://github.com/EFeru/hoverboard-firmware-hack-FOC) mentioned above
+- Build the project.
+- Load the project to
 
 ## Hoverboard control check
 

@@ -5,6 +5,7 @@ RUN mkdir -p /root/catkin_ws/src
 
 # install ros package
 RUN apt-get update && apt-get install -y \
+      vim \
       ros-${ROS_DISTRO}-ros-control \
       ros-${ROS_DISTRO}-ros-controllers \
       ros-${ROS_DISTRO}-rosparam-shortcuts \
